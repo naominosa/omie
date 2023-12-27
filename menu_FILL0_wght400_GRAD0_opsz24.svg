@@ -1,0 +1,710 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: lavenderblush;
+    margin-bottom: 0;
+}
+.main{
+    min-height: 100vh;
+    background-image: url('images/3d.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+nav{
+    margin: 0;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    margin: 0;
+}
+nav li{
+    height: 50px;
+    
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    color:black;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+nav a:hover{
+    background-color:#FDCEDF;
+}
+svg{
+    fill:black;
+}
+h1{
+    font-family: 'WindSong', cursive;
+    margin-right: auto;
+    font-size:3.5rem;
+    color:#020f17;
+}
+h2{ 
+    position: absolute;
+    text-align: left;
+    font-family:Kablammo ;
+    top: 35%;
+    left: 10%;
+    font-size:7vw;
+}
+   /* font-size:Kablammo 3.5
+    padding: 0;
+    margin: 0;
+    top: 35%;
+    left: 10%;
+    text-align:left;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);*/
+h3{
+    position: absolute;
+    text-align: left;
+    font-size: 3vw;
+    top: 55%;
+    left: 20%;
+}
+p {
+    margin-top: 20px; /* Adjusted to remove unnecessary top margin */
+    text-align: justify;
+    float: right;
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    background-color: lavenderblush;
+    overflow: auto;
+    margin-top: 50px;
+    margin-bottom: 0; /* Adjusted to remove unnecessary bottom margin */
+}
+
+h4 {
+    margin-top: 20px; /* Adjusted to remove unnecessary top margin */
+    font-family: 'Kablammo';
+    margin-left: 30px;
+    float: left;
+    font-size: 3.5rem;
+    text-shadow: black 7px 6px 10px;
+}
+
+.skill-box {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    overflow:hidden;
+    margin-left: calc(85% - 210px); /* Adjust the margin as needed */
+    margin-top: 30px;
+}
+
+
+#skills {
+    margin-top: 0;
+    height: 100vh;
+    background-color: lavenderblush;
+}
+
+.skill {
+    background-color: gray;
+    color: lightgrey;
+    text-align: center;
+    padding: 10px;
+}
+
+#display-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: 90px; /* Adjusted to remove unnecessary top margin */
+}
+
+#skill{
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    float: none; /* Removed float property to prevent unintended layout issues */
+}
+.focus-text {
+    position: relative;
+    display: inline-block;
+    float: none;
+    bottom: 30%;
+    left: 31%;
+    font-family: 'WindSong', cursive;
+    /*text-align: left; /* Align the text to the right */
+}
+
+.focus-text::after {
+    content: "";
+    position: absolute;
+    left: -50%;
+    bottom: -5px; /* Adjust the value to set the space between text and line */
+    width: 250%;
+    height: 1px;
+    background-color: black; /* Change the color as needed */
+}
+.focus-list{
+    list-style: none;
+    position: relative;
+    bottom: 25%;
+    right: 15%;
+}
+
+ .focus-list li  {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Add this if you want some spacing between list items */
+ .focus-list li + li {
+    margin-top: 15px;
+}
+.grid-container {
+    background-color: lavenderblush;
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* 3 columns with a fixed width of 150px */
+    grid-template-rows: repeat(2, 250px);    /* 2 rows with a fixed height of 150px */
+    column-gap: 30px; /* Adjust the gap between grid items and rows as needed */
+    row-gap: 10px;
+    min-width: 800px;
+    margin-top: 0;
+    margin-bottom: 60px;
+   /* Add a shadow to the grid container */
+  }
+
+ 
+ 
+             .port{
+               float: none;
+               margin-top: 0;
+    height: fit-content; /* Optional: Adjust the width based on your design */
+    text-align: left;
+    margin-left: 50px;
+    position: relative;
+    bottom: 20%;
+                  }
+
+  .grid-item {
+    margin-top: 50px;
+    background-color:#E7BCDE ;
+    position: relative;
+    left: 50%;
+   /* border: 1px solid #000; Optional: Add border to grid items for better visualization */
+    text-align: center; /* Optional: Center the content in grid items */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(10px 4px 8px rgba(0, 0, 0, 0.2));
+  }
+  .grid-item p {
+    position: relative;
+    display: inline-block;
+    float: none;
+    font-family: 'Roboto', sans-serif;
+    /*text-align: left; /* Align the text to the right */
+}
+
+.grid-item p:after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    bottom: -5px; /* Adjust the value to set the space between text and line */
+    width: 110%;
+    height: 1px;
+    background-color: black; /* Change the color as needed */
+}
+  .grid-itemo{
+    margin-top: 50px;
+    background-color: #FED9ED;
+    position: relative;
+    left: 50%;
+    /*border: 1px solid #000; Optional: Add border to grid items for better visualization */
+    text-align: center; /* Optional: Center the content in grid items */
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(10px 4px 8px rgba(0, 0, 0, 0.2));
+      backdrop-filter: blur(10px);
+  }
+
+  .last {
+    background-color: black;
+}
+
+#envelope {
+    position: relative;
+    top: 40px; /* Changed from percentage to a fixed value for more control */
+    left: -11%;
+}
+
+#contact {
+    position: relative;
+    bottom: -25px; /* Changed from percentage to a fixed value */
+    left: 3.5%;
+    height: fit-content;
+    width: fit-content;
+}
+
+#GET {
+    padding: 10px;
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.last h6 {
+    color: #F9F5F6;
+    position: relative;
+    bottom: 5px; /* Changed from percentage to a fixed value */
+    left: 6.7%;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+#snap {
+    position: relative;
+    left: 85%;
+    bottom: 90px; /* Changed from percentage to a fixed value */
+}
+#IG{
+    position: relative;
+    left: 86%;
+    bottom: 90px; 
+}
+#whatsapp{
+    position: relative;
+    left: 87%;
+    bottom: 90px; 
+}
+.last p{
+    color:palevioletred;
+    margin-top: 0;
+}
+button {
+    background: #030f17;
+    background-image: -webkit-linear-gradient(top, #030f17, #050e14);
+    background-image: -moz-linear-gradient(top, #030f17, #050e14);
+    background-image: -ms-linear-gradient(top, #030f17, #050e14);
+    background-image: -o-linear-gradient(top, #030f17, #050e14);
+    background-image: linear-gradient(to bottom, #030f17, #050e14);
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #b8bdbf 3px;
+    text-decoration: none;
+    position: relative;
+    left: 43%;
+    top: 50px; /* Changed from percentage to a fixed value */
+}
+
+  .btn:hover {
+    text-decoration: none;
+  }
+.sidebar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.btn {
+    background: #F9F5F6;
+    background-image: -webkit-linear-gradient(top, #F9F5F6, #F2BED1);
+    background-image: -moz-linear-gradient(top, #F9F5F6, #F2BED1);
+    background-image: -ms-linear-gradient(top, #F9F5F6, #F2BED1);
+    background-image: -o-linear-gradient(top, #F9F5F6, #F2BED1);
+    background-image: linear-gradient(to bottom, #F9F5F6, #F2BED1);
+    text-shadow: 1px 1px 10px #666666;
+    -webkit-box-shadow: 0px 1px 10px #666666;
+    -moz-box-shadow: 0px 1px 10px #666666;
+    box-shadow: 0px 1px 10px #666666;
+    font-family: Courier New;
+    color: #260326;
+    font-size: 20px;
+    padding: 11px 20px 10px 20px;
+    border: dotted #1f628d 2px;
+    text-decoration: none;
+    position: absolute;
+    text-align: left;
+    top: 65%;
+    left: 30%;
+  }
+  
+  .btn:hover {
+    background: white;
+    background-image: -webkit-linear-gradient(top, white, white);
+    background-image: -moz-linear-gradient(top, white, white);
+    background-image: -ms-linear-gradient(top, white, white);
+    background-image: -o-linear-gradient(top, white, white);
+    background-image: linear-gradient(to bottom, white, white);
+    text-decoration: none;
+  }
+.sidebar li{
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menu-button{
+    display: none; 
+ }
+@media(max-width:800px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    h2{
+        font-size:9vw;
+        top: 45%;
+    }
+    h3{
+        font-size:6vw;
+        top: 51%;
+        left:15% ;
+    }
+    .btn{
+        top:56%
+    }
+
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    };
+    h2{
+        font-size: 4vw;
+    }
+}
+
+
+h2{ 
+    position: absolute;
+    text-align: left;
+    font-family:Kablammo ;
+    top: 35%;
+    left: 10%;
+    font-size:7vw;
+}
+h3{
+    position: absolute;
+    text-align: left;
+    font-size: 3vw;
+    top: 55%;
+    left: 20%;
+}
+
+.btn {
+    background: #F9F5F6;
+    background-image: -webkit-linear-gradient(top, #F9F5F6, #F2BED1);
+    background-image: -moz-linear-gradient(top, #F9F5F6, #F2BED1);
+    background-image: -ms-linear-gradient(top, #F9F5F6, #F2BED1);
+    background-image: -o-linear-gradient(top, #F9F5F6, #F2BED1);
+    background-image: linear-gradient(to bottom, #F9F5F6, #F2BED1);
+    text-shadow: 1px 1px 10px #666666;
+    -webkit-box-shadow: 0px 1px 10px #666666;
+    -moz-box-shadow: 0px 1px 10px #666666;
+    box-shadow: 0px 1px 10px #666666;
+    font-family: Courier New;
+    color: #260326;
+    font-size: 20px;
+    padding: 11px 20px 10px 20px;
+    border: dotted #1f628d 2px;
+    text-decoration: none;
+    position: absolute;
+    text-align: left;
+    top: 65%;
+    left: 30%;
+  }
+  
+  .btn:hover {
+    background: white;
+    background-image: -webkit-linear-gradient(top, white, white);
+    background-image: -moz-linear-gradient(top, white, white);
+    background-image: -ms-linear-gradient(top, white, white);
+    background-image: -o-linear-gradient(top, white, white);
+    background-image: linear-gradient(to bottom, white, white);
+    text-decoration: none;
+  }
+
+   p {
+    margin-top: 20px; /* Adjusted to remove unnecessary top margin */
+    text-align: justify;
+    float: right;
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+.container {
+    background-color: lavenderblush;
+    overflow: auto;
+    margin-top: 50px;
+    margin-bottom: 0; /* Adjusted to remove unnecessary bottom margin */
+}
+
+h4 {
+    margin-top: 20px; /* Adjusted to remove unnecessary top margin */
+    font-family: 'Kablammo';
+    margin-left: 30px;
+    float: left;
+    font-size: 3.5rem;
+    text-shadow: black 7px 6px 10px;
+}
+
+.skill-box {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    overflow:hidden;
+    margin-left: calc(85% - 210px); /* Adjust the margin as needed */
+    margin-top: 30px;
+}
+
+
+#skills {
+    margin-top: 0;
+    height: 100vh;
+    background-color: lavenderblush;
+}
+
+.skill {
+    background-color: gray;
+    color: lightgrey;
+    text-align: center;
+    padding: 10px;
+}
+
+#display-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    margin-top: 90px; /* Adjusted to remove unnecessary top margin */
+}
+
+#skill{
+    position: relative;
+    margin-top: 0;
+    text-align: center;
+    float: none; /* Removed float property to prevent unintended layout issues */
+}
+.focus-text {
+    position: relative;
+    display: inline-block;
+    float: none;
+    bottom: 30%;
+    left: 31%;
+    font-family: 'WindSong', cursive;
+    /*text-align: left; /* Align the text to the right */
+}
+
+.focus-text::after {
+    content: "";
+    position: absolute;
+    left: -50%;
+    bottom: -5px; /* Adjust the value to set the space between text and line */
+    width: 250%;
+    height: 1px;
+    background-color: black; /* Change the color as needed */
+}
+.focus-list{
+    list-style: none;
+    position: relative;
+    bottom: 25%;
+    right: 15%;
+}
+
+ .focus-list li  {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Add this if you want some spacing between list items */
+ .focus-list li + li {
+    margin-top: 15px;
+}
+.grid-container {
+    background-color: lavenderblush;
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* 3 columns with a fixed width of 150px */
+    grid-template-rows: repeat(2, 250px);    /* 2 rows with a fixed height of 150px */
+    column-gap: 30px; /* Adjust the gap between grid items and rows as needed */
+    row-gap: 10px;
+    min-width: 800px;
+    margin-top: 0;
+    margin-bottom: 60px;
+   /* Add a shadow to the grid container */
+  }
+
+ 
+ 
+             .port{
+               float: none;
+               margin-top: 0;
+    height: fit-content; /* Optional: Adjust the width based on your design */
+    text-align: left;
+    margin-left: 50px;
+    position: relative;
+    bottom: 20%;
+                  }
+
+  .grid-item {
+    margin-top: 50px;
+    background-color:#E7BCDE ;
+    position: relative;
+    left: 50%;
+   /* border: 1px solid #000; Optional: Add border to grid items for better visualization */
+    text-align: center; /* Optional: Center the content in grid items */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(10px 4px 8px rgba(0, 0, 0, 0.2));
+  }
+  .grid-item p {
+    position: relative;
+    display: inline-block;
+    float: none;
+    font-family: 'Roboto', sans-serif;
+    /*text-align: left; /* Align the text to the right */
+}
+
+.grid-item p:after {
+    content: "";
+    position: absolute;
+    left: -5%;
+    bottom: -5px; /* Adjust the value to set the space between text and line */
+    width: 110%;
+    height: 1px;
+    background-color: black; /* Change the color as needed */
+}
+  .grid-itemo{
+    margin-top: 50px;
+    background-color: #FED9ED;
+    position: relative;
+    left: 50%;
+    /*border: 1px solid #000; Optional: Add border to grid items for better visualization */
+    text-align: center; /* Optional: Center the content in grid items */
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(10px 4px 8px rgba(0, 0, 0, 0.2));
+      backdrop-filter: blur(10px);
+  }
+
+  .last {
+    background-color: black;
+}
+
+#envelope {
+    position: relative;
+    top: 40px; /* Changed from percentage to a fixed value for more control */
+    left: -11%;
+}
+
+#contact {
+    position: relative;
+    bottom: -25px; /* Changed from percentage to a fixed value */
+    left: 3.5%;
+    height: fit-content;
+    width: fit-content;
+}
+
+#GET {
+    padding: 10px;
+    color: white;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.last h6 {
+    color: #F9F5F6;
+    position: relative;
+    bottom: 5px; /* Changed from percentage to a fixed value */
+    left: 6.7%;
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+#snap {
+    position: relative;
+    left: 85%;
+    bottom: 90px; /* Changed from percentage to a fixed value */
+}
+#IG{
+    position: relative;
+    left: 86%;
+    bottom: 90px; 
+}
+#whatsapp{
+    position: relative;
+    left: 87%;
+    bottom: 90px; 
+}
+.last p{
+    color:palevioletred;
+    margin-top: 0;
+}
+button {
+    background: #030f17;
+    background-image: -webkit-linear-gradient(top, #030f17, #050e14);
+    background-image: -moz-linear-gradient(top, #030f17, #050e14);
+    background-image: -ms-linear-gradient(top, #030f17, #050e14);
+    background-image: -o-linear-gradient(top, #030f17, #050e14);
+    background-image: linear-gradient(to bottom, #030f17, #050e14);
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #b8bdbf 3px;
+    text-decoration: none;
+    position: relative;
+    left: 43%;
+    top: 50px; /* Changed from percentage to a fixed value */
+}
+
+  .btn:hover {
+    text-decoration: none;
+  }
